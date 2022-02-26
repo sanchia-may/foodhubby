@@ -1,0 +1,171 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	height: 100vh;
+	width:  100%;
+	background-image: url(images/bg.jpg);
+	background-position: center;
+	background-size: cover;
+	padding-left: 5%;
+	padding-right: 5%;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+.navbar{
+	width: 100%;
+	height: 20vh;
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
+.logo{
+	width: 200px;
+	height: 200px;
+	cursor: pointer;
+	animation: movedown 1s linear 1;
+	animation-delay: 1s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+}
+
+@keyframes movedown{
+	0%{
+		transform: translateY(-100px);
+		visibility: visible;
+	}
+	100%{
+		transform: translateY(0px);
+		visibility: visible;
+	}
+}
+.clipboard{
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+	animation: movedown 1s linear 1;
+	animation-delay: 3s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+}
+nav{
+	flex: 1;
+	padding-left: 60px;
+	animation: movedown 1s linear 1;
+	animation-delay: 2s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 0px 20px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 26px;
+}
+.content{
+	margin-left: 10%;
+	margin-top: 10%;
+	animation: moveright 1s linear 1;
+	animation-delay: 4s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+}
+
+@keyframes moveright{
+	0%{
+		transform: translateX(-100px);
+		visibility: visible;
+	}
+	100%{
+		transform: translateX(0);
+		visibility: visible;
+	}
+}
+.feature-img{
+	height: 60%;
+	position: absolute;
+	bottom: 0;
+	right: 60px;
+	animation: zoomin 1s linear 1;
+	animation-delay: 5s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+}
+
+@keyframes zoomin{
+	0%{
+		transform: scale(0.5);
+		visibility: visible;
+	}
+	100%{
+		transform: scale(1);
+		visibility: visible;
+	}
+}
+.social-links{
+	transform: rotate(-90deg);
+	position: absolute;
+	left: -40px;
+	bottom: 200px;
+	animation: moveup 1s linear 1;
+	animation-delay: 6s;
+	visibility: hidden;
+	animation-fill-mode: forwards;
+}
+
+@keyframes moveup{
+	0%{
+		transform: translateY(100px) roate(-90deg);
+		visibility: visible;
+	}
+	100%{
+		transform: translateY(0) rotate(-90deg);
+		visibility: visible;
+	}
+}
+.social-links a{
+	text-decoration: none;
+	color: white;
+	padding-right: 60px;
+	font-size: 14px;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+.fa {
+  padding: 6px;
+  font-size: 10px;
+  width: 1px;
+  text-align: left;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
